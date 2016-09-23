@@ -1,0 +1,510 @@
+body {
+  height: 100%;
+  background: #16a7e0;
+  color: black;
+  overflow: hidden; }
+
+.ownerLogin,
+.buyerLogin {
+  cursor: pointer; }
+
+.main_header {
+  background: yellow;
+  position: fixed;
+  width: 100%; }
+
+.main_page_wrapper {
+  margin-top: 15%; }
+
+img.image_buyer {
+  width: 100%; }
+
+#owner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #b2b5b5;
+  display: none; }
+
+#buyer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  display: none;
+  padding: 0; }
+
+#property_formation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: pink;
+  display: none; }
+
+img.owner_choice {
+  width: 40%; }
+
+#bidlist {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: orange;
+  display: none; }
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 251px;
+  margin: 1rem;
+  position: relative;
+  /*width: 300px;*/ }
+
+.panel {
+  padding: 0;
+  margin-top: 3%; }
+
+.panel-body {
+  background: whitesmoke; }
+
+.featured {
+  width: 100%;
+  margin: 0rem;
+  margin-bottom: 1rem; }
+
+.flow_split {
+  margin-top: 25%; }
+
+#message_screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #8cc63e;
+  display: none;
+  color: #f1f1f1;
+  padding: 15%; }
+
+#message_screen img {
+  transform: rotate(-9deg); }
+
+img.owner_choice {
+  width: 40%; }
+
+.main_page_wrapper_para {
+  font-size: 1.5em;
+  letter-spacing: 1.5px;
+  margin-top: 10px; }
+
+.logo {
+  height: 5em;
+  left: 1em;
+  position: relative;
+  margin: 0.3em;
+  z-index: 9999; }
+
+.owner_first_row {
+  margin-top: 1%;
+  border: 16px solid rgba(255, 255, 255, 0.4);
+  padding: 1em; }
+
+.property_form {
+  margin: .5em 0; }
+
+.owner_choice_para {
+  /*font-size: 1.2em;*/ }
+
+input[type="text"],
+input[type="number"] {
+  border: none;
+  outline: none;
+  height: 2em;
+  color: black;
+  text-indent: 20px;
+  width: 19em; }
+
+td.table_td {
+  position: relative;
+  top: 1em; }
+
+td.table_td2 {
+  position: relative;
+  top: 2em; }
+
+td.table_td3 {
+  position: relative;
+  top: 1em;
+  left: 2em; }
+
+td.table_td4 {
+  position: relative;
+  top: 2em;
+  left: 2em; }
+
+td.table_td5 {
+  position: relative;
+  left: 2em; }
+
+.property_main_form {
+  border: 1px solid white;
+  padding: 4em 8em;
+  margin-top: 1%;
+  background: #7370de; }
+
+button.ok_button {
+  border: 1px solid #13afec;
+  background: #13afec;
+  color: white;
+  padding: .5em 2.5em;
+  outline: none; }
+
+#updated_bid {
+  margin-left: 3em; }
+
+button.ok_marg {
+  margin-top: 16%; }
+
+button.ok_button:hover {
+  background: #0e7ed2;
+  transition: .4s; }
+
+td.table_font {
+  font-size: 1.2em; }
+
+#buyers_feature {
+  margin-top: 8%; }
+
+.owner_property:hover {
+  background: rgba(142, 141, 141, 0.64);
+  color: white;
+  font-weight: 700;
+  transition: 1s; }
+
+.negotiate_btn {
+  margin-top: 12%;
+  margin-left: -7%; }
+
+.owner_property {
+  border-radius: 72px;
+  cursor: pointer;
+  letter-spacing: .6px;
+  font-weight: 600; }
+
+img.negotiate_img {
+  width: 100%; }
+
+.negotiat_modal {
+  margin-top: 1em; }
+
+.confirm_head {
+  border: none; }
+
+.nego_btn {
+  position: relative;
+  left: 1.2em;
+  top: 2.6em; }
+
+.ngo_card {
+  margin-left: -.5em; }
+
+.modal .close {
+  outline: none; }
+
+.rusure {
+  font-size: 2em;
+  color: #e344ec; }
+
+.modal_rusure {
+  border: 1px solid white;
+  background: #b3b3b3;
+  color: white;
+  padding: .5em 2.5em;
+  outline: none;
+  margin: 2em 1.5em; }
+
+.modal_rusure:hover,
+.modal_rusure:focus {
+  background: #6b6969; }
+
+input[type="text"].updated_bid {
+  background: rgba(218, 216, 216, 0.41);
+  margin-left: 1.7em; }
+
+input[type="number"].updated_bid {
+  background: rgba(218, 216, 216, 0.41);
+  margin-left: 1.7em; }
+
+#negotiate_done {
+  margin-left: 3em; }
+
+.mssg_screen {
+  font-size: 4em; }
+
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #1f1e1e;
+  border-color: #000000; }
+
+/*-----------------------buyer-0-----------------------*/
+.buyer_prop {
+  border: 1px solid white;
+  padding: 1em;
+  color: white;
+  background: #464444;
+  border-radius: 10px; }
+
+input[type="number"].buyer_input {
+  height: 2.45em;
+  top: 1.5px;
+  position: relative; }
+
+.dol {
+  margin-top: 3%; }
+
+.buyer_innr {
+  margin-top: 5%; }
+
+#bidder_biding {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #eae3e3;
+  display: none;
+  padding: 0;
+  /*padding-top: 7%;*/ }
+
+.bidder_inner_1 {
+  padding-top: 7%;
+  margin-top: 4%; }
+
+#bidder_bid3_file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #eae3e3;
+  display: none;
+  padding: 0;
+  /*padding-top: 7%;*/ }
+
+.bidder_bid3_file_innr {
+  padding-top: 7%; }
+
+.buyer_1 {
+  padding-top: 7%; }
+
+img.biider_img {
+  width: 100%; }
+
+.bidder_inner {
+  background: #1ca58a;
+  padding: 4em;
+  color: white; }
+
+#set_submission {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: pink;
+  display: none;
+  padding: 0; }
+
+.ok_button1 {
+  margin-top: 2em;
+  border: 1px solid #dc5328;
+  background: #dc5328;
+  color: white;
+  padding: .5em 2.5em;
+  outline: none; }
+
+#submitted_successfully_fil {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #a691c5;
+  display: none; }
+
+#unsubmission_file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #a5a5a5;
+  display: none; }
+
+#myModal2 {
+  /*display: none;*/ }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+span.infeet {
+  font-size: .6em; }
+
+span.dollar {
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  color: #989292;
+  font-weight: 500; }
+
+.happy {
+  height: 100vh;
+  background: #8cc63e; }
+
+.sad {
+  height: 100vh;
+  background: #02a7a0; }
+
+#modal_bid {
+  position: relative;
+  left: 2em;
+  font-size: 1.2em;
+  font-weight: 600; }
+
+#modal_area {
+  position: relative;
+  left: 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  top: .7em; }
+
+#modal_location {
+  position: relative;
+  left: 2em;
+  top: 1.3em;
+  font-size: 1.2em;
+  font-weight: 600;
+  word-break: break-word;
+  min-width: 70%; }
+
+.confirming_table {
+  min-width: 10em;
+  max-width: 15em;
+  margin: auto;
+  margin-bottom: 1em; }
+
+.confirming_table tbody,
+.confirming_table tbody tr {
+  width: 100%;
+  display: table; }
+
+td.td_bid1 {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+.confirming_table tbody tr td {
+  max-width: 1em; }
+
+td.td_bid2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  position: relative;
+  top: .7em; }
+
+td.td_bid3 {
+  position: relative;
+  top: 1.4em;
+  font-size: 1.2em;
+  font-weight: 600; }
+
+span.dollar1 {
+  position: absolute;
+  /* left: 3px; */
+  top: 5px;
+  color: #989292;
+  font-weight: 500;
+  /* right: -1em; */
+  margin-left: 2em; }
+
+button.data_modal {
+  margin-left: 4em; }
+
+span.dollar2 {
+  position: absolute;
+  left: 21px;
+  color: gray;
+  font-weight: 500;
+  /*z-index: 1;*/
+  bottom: 19px; }
+
+p.revised_bid_para {
+  font-size: 1.5em;
+  margin-bottom: 3em; }
+
+button.negotiate_butn {
+  margin-left: 1.7em; }
+
+button.disable_button {
+  border: 1px solid #eaeff1;
+  background: #d7d8d8;
+  color: #676666;
+  padding: .5em 2.5em;
+  outline: none; }
+
+i.fa.fa-lock {
+  position: relative;
+  left: 1.3em;
+  font-size: 1.2em;
+  color: black; }
+
+p.selct_property {
+  font-size: 3em;
+  margin-top: 8%; }
+
+.prop_details {
+  font-size: 3em;
+  margin-top: 5%; }
+
+.script_img {
+  position: relative;
+  left: 40%;
+  top: -2.5em;
+  width: 20%; }
+
+#clockdiv {
+  border: 2px solid white;
+  margin-bottom: 2em;
+  background: white; }
+
+.homepage_days_date {
+  border-right: 1px solid #cac3c3;
+  padding: .5em;
+  color: black;
+  font-weight: 600; }
+
+.homepage_days_date1 {
+  color: black;
+  font-weight: 600;
+  padding-top: 7px; }
+
+.current_bidding {
+  font-size: 1.4em; }
+
+.current_bidding_inner {
+  font-size: 1.1em; }
+
+.final_denied {
+  margin: 0; }
+
+.final_choice {
+  top: 30%;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 2em; }
+
+span.alert_success {
+  position: relative;
+  top: 2em;
+  right: 11.5em; }
+
+.alert-danger {
+  padding: 1em; }
+
+img.arrow {
+  position: relative;
+  top: 1em;
+  left: 1em; }
+
+.selct_buyer_property {
+  font-size: 3em;
+  margin-bottom: .6em; }
